@@ -33,3 +33,9 @@ numeroMinimo = int(input("Introduce el numero de comienzo: "))
 
 for numero in range(numeroMinimo, numeroMaximo, 2):
     print(numero)
+
+
+for i in range(10):
+    if i == 6:
+        break
+    print(i)
