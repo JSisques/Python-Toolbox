@@ -44,6 +44,9 @@ def jugar():
         else:
             print("Error, no es una opción valida")
 
+'''
+Este metodo comprueba si la palabra del usuario es igual a la elegida para adivinar
+'''
 def comprobarResultado(palabra):
     if  palabra == palabraParaAdivinar:
         return True
@@ -57,6 +60,9 @@ def pedirLetra():
     letra = input("Introduce la letra: ")
     return letra.lower()
 
+'''
+Este metodo comprueba letra a letra si coincide con la letra dada en el parametro, en el caso de que coincida se cambia el _ por la letra correspondiente
+'''
 def comprobarLetra(letra, palabra):
     palabra  = list(palabra)
 
@@ -68,6 +74,9 @@ def comprobarLetra(letra, palabra):
 
     return "".join(palabra)
 
+'''
+Este metodo convierte la palabra seleccionada a una palabra solo con guiones y devuelve esta ultima
+'''
 def convertirPalabraRespuesta(palabra):
     palabraRespuesta = ""
 
@@ -76,6 +85,9 @@ def convertirPalabraRespuesta(palabra):
 
     return palabraRespuesta
 
+'''
+Este metodo pide una palabra al usuario y la devuelve en minusculas
+'''
 def pedirPalabra():
     palabraUsuario = input("Introduce la palabra: ")
     return palabraUsuario.lower()
